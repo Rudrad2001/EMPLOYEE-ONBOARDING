@@ -1,0 +1,431 @@
+.optn:hover {
+    background-color: rgb(2, 91, 113);
+    color: white;
+}
+
+#applyclr:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.mheader-body-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6px;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.myh2 {
+    color: rgb(10, 120, 135);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.optn {
+    border: 1px solid black;
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+.header-body-details-second {
+    height: 30px;
+    justify-content: space-between;
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+    border: 1px solid blanchedalmond;
+    background-color: rgb(230, 228, 228);
+}
+
+.pdata {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+
+/* //pop up form style  */
+.popup {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    height: 556px;
+    top: 25px;
+    left: 123px;
+    width: 830px;
+    background: rgb(221, 221, 221);
+    padding: 20px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    border-radius: 6px;
+    position: relative;
+}
+
+.popup-content .firstpop {
+    margin-left: 98%;
+    margin-top: -19px;
+}
+
+.popup .popup-content .dltbtn {
+
+    width: 20px;
+    /* Adjust the width as needed */
+    height: 20px;
+    /* Adjust the height as needed */
+    background-color: rgb(138, 138, 138);
+    /* border: none; */
+    border: 2px solid rgb(161, 161, 161);
+    font-weight: 700;
+    border-radius: 50%;
+    /* Makes it a circle */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    color: rgb(255, 255, 255);
+    /* Adjust the color as needed */
+    display: flex;
+    justify-content: center;
+    /* Horizontally centers the content */
+    align-items: center;
+    /* Vertically centers the content */
+    cursor: pointer;
+}
+
+.popup-content .secondpop {
+    height: 27px;
+    /* background-color: brown;  */
+    margin-bottom: 2px;
+}
+
+.dsgn {
+
+    border-radius: 0.5rem;
+}
+
+.popup-content .secondpop .shftbtn {
+    height: 30px;
+    width: 13%;
+    background: rgb(221, 221, 221);
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: rgb(197, 196, 196);
+    border-radius: 3px;
+}
+
+.popup-content .secondpop .bckcolor {
+    background-color: rgb(255, 255, 255);
+}
+
+.popup-content .secondpop .shftbtn:hover {
+    background: #ffffff;
+}
+
+.popup-content .middlepop {
+    height: 87%;
+    background-color: white;
+    margin-left: -20px;
+    margin-right: -20px;
+    /* position: inherit; */
+    padding-top: 28px;
+}
+
+
+
+.popup-content #myrow {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.popup-content .middlepop .singletxtfld {
+    width: auto;
+    margin-top: 15px;
+}
+
+.middlepop .mdltxt {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 19px;
+    border: 1px solid white;
+    /* margin-left: auto; */
+    margin-top: -48px;
+    /* justify-content: center; */
+    font-size: 12px;
+    /* margin-right: auto; */
+    margin-left: 20px;
+    margin-right: 60px;
+
+}
+
+.middlepop .mdltxt2 {
+    background-color: white;
+    width: auto;
+    height: 19px;
+    border: 1px solid white;
+    margin-left: 20px;
+    margin-top: -48px;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: auto;
+
+}
+
+#mybtn {
+    max-width: 20px;
+    margin-top: 18px;
+    width: 18px;
+    display: flex;
+    background-color: rgb(212, 203, 221);
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+}
+
+.my-button {
+    background-color: rgb(173, 176, 179);
+    border: none;
+    color: white;
+    /* Text color */
+    font-size: 16px;
+    /* Adjust font size */
+    padding: 6px 11px;
+    /* Adjust padding as needed */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition */
+}
+
+.my-button:hover {
+    background-color: #555;
+    /* Change background color on hover */
+}
+
+
+.colmine {
+    margin-top: 20px;
+
+}
+
+/* <!-- form1 that department and designation cross things  --> */
+
+.asgn_holiday {
+    margin-top: 100px;
+    height: 120px;
+    /* background-color: aquamarine; */
+    margin-left: 18px;
+    margin-right: 15px;
+}
+
+.sngl_line {
+    height: 0px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-top: 12px;
+}
+
+/* department and designation  */
+.dpt_dsg {
+    height: 60px;
+    margin-top: 24px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+
+/* //department  work */
+.department {
+    width: 44%;
+    height: 50px;
+    /* border: 2px solid rgb(30, 1, 1); */
+    border: 2px solid rgb(221, 221, 221);
+
+    border-radius: 12px;
+    background-color: white;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.dept_upper_text {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 15px;
+    margin-left: 30px;
+    margin-bottom: 14%;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.dept_upper_text .deptext {
+    color: rgb(6, 67, 83);
+    font-size: 11px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.department .depttypes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+    margin-left: -96px;
+    gap: 12px;
+}
+
+.department .depttypes .deptsingletype {
+    background-color: antiquewhite;
+    align-items: center;
+    font-size: 11px;
+    width: 100px;
+    text-align: center;
+    border-radius: 3px;
+    padding-right: 13px;
+}
+
+.department .depttypes .depttypecancelbtn {
+    background-color: antiquewhite;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    padding: 0px 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 16px;
+    margin-left: -18px;
+    border-radius: 5px
+}
+
+.desig_upper_text {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 15px;
+    margin-left: 30px;
+    margin-bottom: 14%;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.desig_upper_text .desig_text {
+    color: rgb(6, 67, 83);
+    font-size: 11px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+}
+.department .depttypes .desigsingletype {
+    background-color: rgb(212, 212, 255);
+    align-items: center;
+    font-size: 11px;
+    width: 100px;
+    text-align: center;
+    border-radius: 3px;
+    padding-right: 13px;
+}
+
+.department .depttypes .desgtypecancelbtn {
+    background-color: rgb(212, 212, 255);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    padding: 0px 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 16px;
+    margin-left: -18px;
+    border-radius: 5px
+}
+/* form2 week off  */
+
+#form2 {
+    /* background-color: #555; */
+    margin-left: 20px;
+    margin-right: 20px;
+    /* height: 60px; */
+    margin-top: 10px;
+}
+
+.weekOff {
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.weekoffcontent {
+    display: flex;
+    gap: 20px;
+    /* border: 1px solid blue; */
+    height: 25px;
+    margin-left: 20px;
+}
+
+.weekOff .weekoffcontent .weekday {
+    font-size: 14px;
+    border-radius: 4px;
+    width: 90px;
+    background-color: rgb(183, 232, 181);
+    height: 24px;
+    text-align: center;
+}
+
+.weekOff .weekoffuppertxt {
+    width: auto;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: -21px;
+    margin-left: -65%;
+    padding-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+.sidebar .righttime .hourss {
+    font-size: 20px;
+    margin-left: 6px;
+    margin-top: -11px;
+}
+.sidebar .righttime {
+    border: 1px solid rgb(166, 151, 151);
+    height: 66px;
+    width:202px;
+    border-radius: 10px;
+    margin-left: 3px;
+    background-color: rgb(154, 177, 208);
+}
+.sidebar .righttime .timeonly {
+    font-size: 28px;
+    display: flex;
+    margin-left: 39px;
+    margin-top: 8px;
+    color: whitesmoke;
+}

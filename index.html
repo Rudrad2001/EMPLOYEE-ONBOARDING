@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="employeestyle.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<style>
+    /* #applyclr:visited{
+    color: rgb(255, 255, 255);
+} */
+
+    @media (min-width: 1200px) {
+        .mcontainer {
+            max-width: 100%;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+
+
+    .sidebar li a:hover {
+        background-color: rgb(2, 91, 113);
+        width: 100%;
+
+    }
+    /* Add this CSS to your stylesheet or in a style block in your HTML file */
+
+#form1 .row {
+    margin-bottom: 10px;
+}
+
+#form1 .col {
+    padding: 0 10px;
+}
+
+#form1 .singletxtfld {
+    margin-bottom: 10px;
+}
+
+#form1 input[type="text"],
+#form1 input[type="date"] {
+    width: 100%;
+    padding: 8px;
+}
+
+#form1 .mdltxt {
+    font-size: 12px;
+    position: absolute;
+    top: 124%;
+    left: 146px;
+    background-color: white;
+    padding: 0 5px;
+    transform: translateY(-50%);
+}
+
+#form1 .row .col {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+@media (max-width: 767px) {
+    #form1 .row .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+/* Add this CSS to your stylesheet or in a style block in your HTML file 2 */
+#form2 {
+    /* Add any specific styling for form2 if needed */
+}
+
+#form2 .popup-content {
+    padding: 20px;
+}
+
+#form2 .middlepop {
+    display: flex;
+    justify-content: center;
+}
+
+#form2 .firstform {
+    width: 100%;
+    max-width: 800px;
+}
+
+#form2 .singletxtfld {
+    margin-bottom: 60px;
+}
+
+#form2 .mdltxt {
+    position: relative;
+}
+
+#form2 .mdltxt span {
+    font-size: 12px;
+    position: absolute;
+    bottom: -4px;
+    
+    left: 24px;
+}
+
+#form2 .mdltxt input[type="date"] {
+    padding: 10px;
+}
+
+#form2 .mdltxt input[type="text"] {
+    padding: 10px;
+}
+
+#form2 .mdltxt input[type="file"] {
+    padding: 10px;
+}
+
+#form2 .mdltxt label {
+    padding: 10px;
+}
+
+#form2 .hidden {
+    display: none;
+}
+
+
+</style>
+
+<body>
+
+    <div class="mcontainer">
+
+        
+        <div class="container-left">
+
+            <nav class="sidebar">
+                <header>
+                    <div class="headertime">
+                        <div class="leftdate" style="padding-bottom: 16px;">
+                            <p class="todaydate" style="margin-top: 34px;">Today</p>
+                            <p class="datemonth" style="margin-top: -20px;" id="dateDisplay"></p>
+                        </div>
+                        <div class="righttime">
+                            <span class="timeonly" id="timeDisplay"></span>
+                            <p class="hourss">hrs.</p>
+                        </div>
+                    </div>
+                    <div class="sngleline"></div>
+                </header>
+
+
+                <div class="menu-bar">
+                    <div class="menu">
+                       
+                        <ul class="menu-links">
+                            <div style="padding-left: 5px; padding-right: 5px;">
+
+                                <li class="my-link">
+                                    <a href="allapps.html">
+                                        <!-- <i class="fa-solid fa-house icon"></i> -->
+                                        <i class="fas fa-th-large icon"></i>
+
+                                        <span class="text nav-text">All Apps</span>
+                                    </a>
+                                </li>
+
+                                <li class="my-link">
+                                    <a href="#">
+                                        <!-- <i class="fa-solid fa-house icon"></i> -->
+                                        <i class="fas fa-chart-bar icon"></i>
+                                        <span class="text nav-text">Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="my-link">
+                                    <a href="employee.html">
+                                        <i class="fa-solid fa-users icon"></i>
+                                        <span class="text nav-text">Employees</span>
+                                    </a>
+                                </li>
+
+                                <li class="my-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-list-check icon"></i>
+                                        <span class="text nav-text">Roles And Premissions</span>
+                                    </a>
+                                </li>
+
+                                <li class="my-link">
+                                    <a href="index.html">
+                                        <i class="fas fa-clock icon"></i>
+                                        <!-- <span class="text nav-text" onclick="$('#reportOptionsHidden').toggle('fast')">Time And Attendence</span> -->
+                                        <span class="text nav-text">Time And Attendence</span>
+
+                                        <!-- <button >Time and attendence</button> -->
+                                    </a>
+                                </li>
+                                <li class="my-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-location-dot icon"></i>
+                                        <span class="text nav-text">Geo Fence</span>
+                                    </a>
+                                </li>
+                                <li class="my-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-person-walking-arrow-right icon"></i>
+                                        <span class="text nav-text">Leave</span>
+                                    </a>
+                                </li>
+                                <li class="my-link">
+                                    <a href="#">
+                                        <i class="fas fa-file-alt icon"></i>
+                                        <span class="text nav-text">Reports</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                        <div class="righttime genparent">
+
+                            <span class="timeonly gen">GewinnsHR</span>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div class="container-right">
+            <div class="container-right-top">
+                <div class="header-top">
+
+                    <div class="allcontents">
+
+                        <div class="frstcontents">
+    
+                            <input type="search" class="srchcon" placeholder="Search" >
+                        </div>
+    
+                        <div class="scndcontents" >
+    
+                            <p style="font-size: 20px;margin-bottom: 0rem;">English (UK)</p>
+                            <select name="" id="" class="selecop"></select>
+                        </div>
+    
+                        <div class="thirdcontents">
+    
+                            <div >
+                                <p class="firsttxt" >Radheshyam Mallick</p>
+                                <p class="secondtxt" >ID: SM/KMC/5/002</p>
+                                <p class="thirdtxt" >ADMIN</p>
+                            </div>
+                            <div class="imgandoptn" >
+                                <img class="mimg" src="/images/profile.jpg" alt="">
+                            <select name="" id="" class="optn"></select>
+    
+                            </div>
+    
+                        </div>
+    
+    
+                       </div>
+                </div>
+            </div>
+            <div class="container-right-middle">
+
+                <div class="header-middle">
+                    <div class="name">
+                        <a href="employee.html" class="apply" id="applyclr">Add Employee</a>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="container-right-body">
+
+                <div class="header-body">
+                    <!-- <h2>hiiiiiiiiiiiiiiii</h2> -->
+
+
+                    <!-- upto here same as shift.html  -->
+
+                    <div class="mheader-body-details">
+                       
+
+                        <div style="display: flex; gap: 2%;">
+                            <select class="optn" id="statusSelect">
+                                <option value="">All</option>
+                                <option value="India">India</option>
+                                <option value="Uk">United Kingdom</option>
+                            </select>
+
+                            <select class="optn" id="statusSelect">
+                                <option value="">Region</option>
+                                <option value="All">All</option>
+                                <option value="WB">West Bengal</option>
+                                <option value="Kr">Karnataka</option>
+                            </select>
+                            <select class="optn" id="statusSelect">
+                                <option value="">Branch</option>
+                                <option value="A">All</option>
+                                <option value="Ko">Kolkata</option>
+                                <option value="Si">Siliguri</option>
+                                <option value="Ho">Hoogly</option>
+                            </select>
+
+                            <select class="optn" id="statusSelect">
+                                <option value="">Entity</option>
+                                <option value="Im">Invictus Minds</option>
+                                <option value="Mw">Minds Web</option>
+                            </select>
+                            <select class="optn" id="statusSelect">
+                                <option value="">Department</option>
+                                <option value="A">ALL</option>
+                                <option value="Ad">ADMIN</option>
+                                <option value="Fi">FINANCE</option>
+                                <option value="Ma">MANAGEMENT</option>
+                            </select>
+
+                            <select class="optn" id="statusSelect">
+                                <option value="">Designation</option>
+                                <option value="Active">Admin & Operation</option>
+                                <option value="Inactive">CEO </option>
+                                <option value="Inactive">HEAD TECHNOLOGY</option>
+                            </select>
+
+                            <select class="optn" id="statusSelect">
+                                <option value="">More</option>
+                                <option value="Active">status</option>
+                                <option value="Inactive">gender</option>
+                            </select>
+
+                            
+
+                            <select class="optn" name="" id="toggleSelect">
+                                <option style="background-color: white; color: rgb(3, 98, 102);" value="Add New">Add
+                                    New</option>
+                                <option value="Create New" id="createshift">Add manually</option>
+                                <option value="Bulk Upload" >Bulk Upload</option>
+                            </select>
+                            <!-- <div style="border: 1px solid black; width: 150px; height: 40px; border-radius: 6px;">Add Shift</div> -->
+                        </div>
+                    </div>
+
+
+                 
+
+
+                   
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- form  -->
+   
+
+    <!-- //model  -->
+    <!-- javascript work  -->
+    <script>
+
+        const mainForm = document.getElementById("mainForm");
+        const toggleSelect = document.getElementById("toggleSelect");
+        const popupform = document.getElementById("popupform");
+        const exitformbtn = document.getElementById("exitform");
+        const createButton = document.getElementById("createButton");
+        const formDetails = document.getElementById("formDetails");
+        const form1 = document.getElementById("form1");
+        const form2 = document.getElementById("form2");
+        const otherbtn = document.getElementById("otherbtn");
+        const newbtn = document.getElementById("newbtn");
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            toggleSelect.addEventListener('change', function () {
+
+                const selectedOption = toggleSelect.value;
+
+                if (selectedOption === "Create New") {
+                    // window.alert("working");
+                    console.log("working");
+                    popupform.classList.remove("hidden");
+
+                    exitformbtn.addEventListener('click', function (e) {
+                        popupform.classList.add('hidden');
+                        window.location.reload();
+                    });
+
+                
+                }
+                else {
+                    window.alert("Please select create new option");
+                }
+
+
+            })
+        })
+
+
+        function updateFormDetails() {
+
+
+            const holiday_name = document.getElementById('holiday_name').value;
+            const holiDate = document.getElementById('holiDate').value;
+            const holiday_type = document.getElementById('holiday_type').value;
+
+
+            const selectedDate = new Date(holiDate);
+            console.log(selectedDate);
+
+            // Get the day (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+            const dayOfWeek = selectedDate.getDay();
+
+            // Now you can use 'dayOfWeek' to get the day as a number
+            console.log(dayOfWeek);
+
+            const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const dayName = dayNames[dayOfWeek]; // Get the day name
+            console.log(dayName); // Example: If 'dayOfWeek' is '5', this will  'Friday'
+
+
+            // pull out dept text 
+            const deptsingletypeElements = document.querySelectorAll('.deptsingletype');
+            const departmentTextArray = [];
+
+            deptsingletypeElements.forEach(function (element) {
+                departmentTextArray.push(element.textContent.trim());
+            });
+
+            const departmentText = departmentTextArray.join(', ');
+
+
+
+            const desigsingletypeElements = document.querySelectorAll('.desigsingletype');
+            const desigTextArray = [];
+
+            desigsingletypeElements.forEach(function (element) {
+                desigTextArray.push(element.textContent.trim());
+            });
+
+            const desigText = desigTextArray.join(', ');
+            formDetails.innerHTML = (` <div style="padding-right: 6px; padding-left: 6px;">
+
+<div class="header-body-details-second" style="border: 1px solid rgb(122, 133, 232);">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+    style="margin-left: 4px;margin-top: 8px;width: 24px;height: 14px;">
+    <p class="pdata" style="padding-left: 30px;align-items: center;">${holiday_name}</p>
+    <p class="pdata">${holiDate}</p>
+    <p class="pdata">${holiday_type}</p>
+    <p class="pdata">${departmentText}</p>
+    <p class="pdata">${desigText}</p>
+    <p class="pdata">${dayName}</p>
+
+
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <button type="button" style="background-color: transparent; border: none;">
+            <i class="fa-solid fa-pen" style="color: #bc9338; font-size: 20px;"></i>
+        </button>
+
+        <button type="button" style="background-color: transparent; border: none;">
+            <i class="fa-solid fa-trash-can" style="color: #485161; font-size: 20px;"></i>
+        </button>
+    </div>
+
+</div>
+</div>
+
+<!-- row per page and button like previous,next -->
+<div
+style="margin-top: 20%; width: 100%; height: 40px; background-color: aqua; display: flex;align-items: center;">
+
+<div class="firsthalf"
+    style="height: 20px; display: flex; align-items: center; padding: 0 10px;">
+    <span style="font-size: 14px">Row Per Page</span>
+    <select name="" id=""
+        style="margin-left: 15px; margin-right: 15px; width: 50px; border-radius: 4px;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <span style="font-size: 14px">Showing 1-1 of 1 entries</span>
+</div>
+<div class="secondhalf" style="margin-left: 100px; display: flex; gap: 2px; height: 20px;">
+
+    <button class="firstone"
+        style="width: 80px;border: white; background-color: white;border-radius: 2px;color:rgb(34, 100, 165); font-size: 14px; text-align: center;align-items: center;">Previous</button>
+    <button class="secondone"
+        style="width: 20px;border: white; background-color: white;border-radius: 2px;color:rgb(34, 100, 165); font-size: 14px; text-align: center;align-items: center;">1</button>
+    <button class="thirdone"
+        style="width: 45px;border: white; background-color: white;border-radius: 2px;color:rgb(34, 100, 165); font-size: 14px; text-align: center;align-items: center;">Next</button>
+
+</div>
+
+</div>`);
+
+            //                     }`;
+        }
+
+        function removeDepartment(button) {
+            const departmentToRemove = button.parentElement;
+            departmentToRemove.remove();
+            // updateFormDetails();
+        }
+
+        function removeDesig(button) {
+            const desigToRemove = button.parentElement;
+            desigToRemove.remove();
+            // updateFormDetails();
+        }
+
+        createButton.addEventListener('click', function (e) {
+
+            e.preventDefault();
+            popupform.classList.add('hidden');
+            updateFormDetails()
+
+        })
+
+        otherbtn.addEventListener('click', function (e) {
+
+            e.preventDefault();
+            form1.classList.add('hidden');
+            form2.classList.remove('hidden');
+
+            document.querySelector(".bckcolor").style.backgroundColor = "rgb(221, 221, 221)"
+            document.querySelector(".shftbtn2").style.backgroundColor = "#ffffff"
+
+        })
+
+        newbtn.addEventListener('click', function(e) {
+            form1.classList.remove('hidden');
+            form2.classList.add('hidden');
+
+            document.querySelector(".shftbtn2").style.backgroundColor = "rgb(221, 221, 221)"
+            document.querySelector(".bckcolor").style.backgroundColor = "#ffffff"
+
+        })
+    </script>
+   
+
+   </script>
+   <script>
+    function updateTime() {
+        const now = new Date();
+
+        const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+        document.getElementById('dateDisplay').textContent = now.toLocaleDateString(undefined, options);
+
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+
+        document.getElementById('timeDisplay').textContent = `${hours}:${minutes}:${seconds}`;
+
+        setTimeout(updateTime, 1000);
+    }
+
+    updateTime();
+</script>
+</body>
+
+</html>

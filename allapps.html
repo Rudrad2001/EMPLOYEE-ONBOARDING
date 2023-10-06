@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- <script src="time.js"></script> -->
+
+    <script type="module" src="js/time.js"></script>
+</head>
+
+<body>
+
+    <div class="mcontainer">
+
+        <div class="container-left">
+
+            <nav class="sidebar">
+
+                <header>
+                    <div class="headertime">
+                        <div class="leftdate" style="padding-bottom: 16px;">
+                            <p class="todaydate" style="margin-top: 34px;">Today</p>
+                            <p class="datemonth" style="margin-top: -20px;" id="dateDisplay"></p>
+                        </div>
+                        <div class="righttime">
+                            <span class="timeonly" id="timeDisplay"></span>
+                            <p class="hourss"></p>
+                        </div>
+                    </div>
+                    <div class="sngleline"></div>
+                </header>
+
+
+                <div class="menu-bar">
+                    <div class="menu">
+
+                        <ul class="menu-links">
+                            <div style="padding-left: 5px; padding-right: 5px;">
+
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <!-- <i class="fa-solid fa-house icon"></i> -->
+                                        <i class="fas fa-th-large icon"></i>
+
+                                        <span class="text nav-text">All Apps</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <!-- <i class="fa-solid fa-house icon"></i> -->
+                                        <i class="fas fa-chart-bar icon"></i>
+                                        <span class="text nav-text">Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-link">
+                                    <a href="employee.html">
+                                        <i class="fa-solid fa-users icon"></i>
+                                        <span class="text nav-text">Employees</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-list-check icon"></i>
+                                        <span class="text nav-text">Roles And Premissions</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-link">
+                                    <a href="mine2.html">
+                                        <i class="fas fa-clock icon"></i>
+                                        <!-- <span class="text nav-text" onclick="$('#reportOptionsHidden').toggle('fast')">Time And Attendence</span> -->
+                                        <span class="text nav-text">Time And Attendence</span>
+
+                                        <!-- <button >Time and attendence</button> -->
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-location-dot icon"></i>
+                                        <span class="text nav-text">Geo Fence</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-person-walking-arrow-right icon"></i>
+                                        <span class="text nav-text">Leave</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class="fas fa-file-alt icon"></i>
+                                        <span class="text nav-text">Reports</span>
+                                    </a>
+                                </li>
+
+                            </div>
+                        </ul>
+
+
+                        <div class="righttime genparent">
+
+                            <span class="timeonly gen">GewinnsHR</span>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </nav>
+        </div>
+
+
+
+        <div class="container-right">
+            <div class="container-right-top">
+                <div class="header-top">
+
+                    <div class="allcontents">
+
+                        <div class="frstcontents">
+
+                            <input type="search" class="srchcon" placeholder="Search">
+                        </div>
+
+                        <div class="scndcontents">
+
+                            <p style="font-size: 20px;margin-bottom: 0rem;">English (UK)</p>
+                            <select name="" id="" class="selecop"></select>
+                        </div>
+
+                        <div class="thirdcontents">
+
+                            <div>
+                                <p class="firsttxt">Radheshyam Mallick</p>
+                                <p class="secondtxt">ID:SM/KMC/5/002</p>
+                                <p class="thirdtxt">ADMIN</p>
+                            </div>
+                            <div class="imgandoptn">
+                                <img class="mimg" src="/images/profile.jpg" alt="">
+                                <select name="" id="" class="optn"></select>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-right-middle">
+
+                <div class="header-middle">
+                    <div class="name">
+                        <a href="employee.html" class="apply" id="applyclr">Add Employee</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-right-body">
+
+                <div class="header-body">
+                    <!-- <h2>hiiiiiiiiiiiiiiii</h2> -->
+
+                    <div class="allcards">
+                        <div id="reportOptionsHidden" style="display: none;">
+
+                            <div class="mtab">
+                                hii
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="employee.html">  <img class="card-img-top" src="/images/employee.png" alt="Card image cap"></a>
+                            <div class="card-body">
+
+                                <h2 class="card-text">Employee</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="/images/geo-fence.jpg" alt="Card image cap">
+                            <div class="card-body">
+
+                                <h2 class="card-text">Geo-Fence</h2>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" src="/images/leave.jpg" alt="Card image cap">
+                            <div class="card-body">
+
+                                <h2 class="card-text">Leave</h2>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" src="/images/time-attendance.jpg" alt="Card image cap">
+                            <div class="card-body">
+
+                                <h2 class="card-text" style="font-size:22px">Time & Attendence</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="/images/roles-permissions.png" alt="Card image cap">
+                            <div class="card-body">
+
+                                <h2 class="card-text" style="font-size: 21px;">Roles & Permission</h2>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" src="/images/reports.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h2 class="card-text">Reports</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- //model  -->
+    <script>
+        function updateTime() {
+            const now = new Date();
+    
+            const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+            document.getElementById('dateDisplay').textContent = now.toLocaleDateString(undefined, options);
+    
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            
+    
+            document.getElementById('timeDisplay').textContent = `${hours}:${minutes}`;
+    
+            setTimeout(updateTime, 1000);
+        }
+    
+        updateTime();
+    </script>
+
+</body>
+
+</html>
